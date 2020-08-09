@@ -1,0 +1,143 @@
+body,html
+{
+    height:100%;
+    width:100%;
+    margin-left:0%;
+        background-color:pink;  
+}
+.background{
+    background-image:url('backg.jpg');
+    height:100%;
+    background-position: "center";
+    background-repeat:no-repeat;
+    background-size: cover;
+    position:relative;
+    display:flex;
+    
+}
+
+.back-text{
+    text-align:center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    line-height:0.5;
+    font-family:"Monotype Corsiva";
+}
+.back-text h1
+{
+    font-size:300;
+    font-weight:bold;
+    font-family:"Lucida Calligraphy";
+}
+.back-text a button
+{
+    color:black;
+    border-color:Fuchsia;
+    background-color:Fuchsia;
+    padding:20px;
+}
+a:link, a:visited {
+    background-color:transparent;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;	
+    text-decoration:none;
+    display: inline-block;
+}
+
+@media screen and (device-aspect-ratio:16/9)
+{
+    body,container{
+        color:blue;
+    }
+}
+@media print{
+    body{ 
+    width:100%;
+    }
+}
+@media screen and(max-width:520px){
+    container{font-size:30px;
+        width:400px;
+        padding-left: 50px;
+    padding-right: 50px;
+ }
+}
+.topnav
+{
+    background-color:plum;
+    overflow:hidden;
+    text-align:left;
+}
+.topnav a{
+    float:left;
+    display:block;
+    color:black;
+    text-align:center;
+    padding:10px 8px;
+    text-decoration:none;
+    font-size:15px;
+}
+.topnav a:hover
+{
+    background-color:purple;
+    color:white;
+}
+.topnav a.active
+{
+    background-color:rgb(255, 0, 234);
+    color:black;
+}
+a {
+    text-decoration: none;
+}
+.footer
+{
+    background-color:black;
+    text-align:center;
+    margin-top:30px;
+    padding:10px;
+    font-family:"calibri";
+    color:white;
+    float:none;
+
+}
+.footer h1    
+{
+    font-size:200%;
+}
+
+input[type=text] {
+    width: 60px;
+    height:50px;
+    box-sizing: border-box;
+    border:none;
+    color:black;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: pink;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 20%;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: pink;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius:20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+    
