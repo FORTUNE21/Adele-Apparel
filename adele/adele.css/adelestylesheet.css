@@ -28,9 +28,9 @@ body,html
 }
 .back-text h1
 {
-    font-size:300;
+    font-size:200%;
     font-weight:bold;
-    font-family:"Lucida Calligraphy";
+    font-family:'Lucida Sans Unicode';
 }
 .back-text a button
 {
@@ -50,8 +50,8 @@ a:link, a:visited {
 
 @media screen and (device-aspect-ratio:16/9)
 {
-    body,{
-        color:pink;
+    body,container{
+        color:blue;
     }
 }
 @media print{
@@ -61,10 +61,19 @@ a:link, a:visited {
 }
 @media screen and(max-width:520px){
     body{font-size:30px;
-        width:100%;
+        width:400px;
         padding-left: 50px;
     padding-right: 50px;
  }
+}
+.topnav li i{
+    font-size:2em;
+    }
+
+/* adding the dropdown style:hide dropdowns by default,display dropdowns on hover */
+.topnav ul li:hover > ul {
+    display:list-item;
+
 }
 .topnav
 {
@@ -93,6 +102,92 @@ a:link, a:visited {
 }
 a {
     text-decoration: none;
+}
+
+.about{
+    background-color:rgb(241, 165, 241);
+    width:100%;
+    height:50c;
+}
+
+.about h2{
+    text-align:center;
+    color:black;
+    margin-top:30px;
+    
+}
+
+
+.box{
+    height:50vh;
+    color:white;;
+    margin:10px;
+    border-radius:40%;
+    width:30%;
+    font-size: 15px;
+font-family:sans-serif;
+padding: 10px;
+background: purple;
+word-wrap: break-word;
+}
+.box:hover{
+    transition:0.80s;
+    color:black;
+    background: rgb(241, 165, 241);
+    transition: 0.8s;
+    -webkit-transition:0.80s;
+    -moz-transition:0.8s;
+    -ms-transition:0.8s;
+    -o-transition: 0.8s; 
+    -webkit-transform: rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -o-transform: rotate(360deg); 
+    transform: rotate(360deg);
+   
+}
+.box pre{
+    font-family:sans-serif;
+    text-align:center;
+} 
+.contact{
+    text-align:center;
+    color:black;
+    margin:0;
+}
+.inputbox{
+    background:purple;
+    color:white;
+    width:30%;
+    border-radius: 10px;
+    padding:10px;
+    margin:10px;
+    border:none;
+   height:1.4em;
+}
+.message{
+    background-color: purple;
+    color:white;
+    width:30%;
+    border-radius: 10px;
+    padding: 10px ;
+    margin:10px;
+    height:7em;
+    border:none;
+}
+.button{
+    text-align:center;
+    background-color: plum;
+    color:purple;
+    height:2.7em;
+    padding:8px;
+    margin:10px auto 0;
+    border:none;
+    width:13%;
+    border-radius:20px;
+    align-self: center;
+    display:flex;
+    justify-content: center;
 }
 .footer
 {
@@ -139,5 +234,3 @@ input[type=button], input[type=submit], input[type=reset] {
     margin: 4px 2px;
     cursor: pointer;
 }
-
-    
